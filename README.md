@@ -7,6 +7,7 @@ Linking:
 ```
 ln -s ./dotfiles/.zshrc .zshrc
 ln -s ./dotfiles/Preferences.sublime-settings ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings
+ln -s ./dotfiles/pure.zsh /usr/local/lib/node_modules/pure-prompt/pure.zsh
 ```
 
 Changing icons:
@@ -23,12 +24,10 @@ Installing pure:
 $ npm install --global pure-prompt
 ```
 
-Changing the pre-prompt in pure:
+Changing the pre-prompt in pure.zsh to only give the currect directory rather than the entire path:
+http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 
-```python
-# Set the path.
-# preprompt_parts+=('%F{blue}%~%f')
-# New prompt set by me
+```
 preprompt_parts+=('%F{blue}%1d%f')
 ```
 
