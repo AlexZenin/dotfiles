@@ -23,5 +23,13 @@ Installing pure:
 $ npm install --global pure-prompt
 ```
 
+Changing the pre-prompt in pure:
+
+```python
+# Set the path.
+# preprompt_parts+=('%F{blue}%~%f')
+# New prompt set by me
+preprompt_parts+=('%F{blue}%1d%f')
+```
 
 ### Sublime
