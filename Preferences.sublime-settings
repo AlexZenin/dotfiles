@@ -5,6 +5,11 @@
 	[
 		"Vintage"
 	],
+	"rulers":
+	[
+		80
+	],
+	"scroll_past_end": true,
 	"theme": "Boxy Ocean.sublime-theme",
 	"theme_accent_cyan": true,
 	"theme_bar": true,
@@ -22,5 +27,6 @@
 	"theme_tab_selected_transparent": true,
 	"theme_tab_selected_underlined": true,
 	"theme_tab_size_xl": true,
-	"theme_unified": true
+	"theme_unified": true,
+	"word_wrap": true
 }

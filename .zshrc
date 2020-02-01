@@ -98,6 +98,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Custom Aliases
+# alias push="rsync -avzu -e 'ssh' /local/directory ssh_alias:/remote/directory"
+# alias sat="source activate tensorflow"
+# alias sd="source deactivate"
+# alias jn="jupyter notebook"
+# alias lpush="aws lambda update-function-code --function-name FunctionName --zip-file fileb://FunctionName.zip"
+
 # Autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
@@ -112,3 +119,12 @@ prompt pure
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# New path to manually add Anaconda3
+# export PATH=$PATH:/usr/local/anaconda3/bin
+
+# New path for Rust/Cargo binaries (ProPublica fb ad project)
+# PATH=$PATH:~/.cargo/bin
+
+# New path for postgresql.app
+# PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
