@@ -8,6 +8,17 @@ We want to ensure that the default bash shell is used. Catalina comes with `zsh`
 chsh -s /bin/bash
 ```
 
+Remember to restart the terminal for the changes to take place.
+
+#### Other commands
+
+```bash
+# Confirm what shell you are running
+$ echo $0
+# See what other shells are available
+$ cat /etc/shells
+```
+
 ### Homebrew
 
 From wikipedia **_"Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple's macOS and linux."_** 
@@ -82,7 +93,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 Installing pure:
 
 ```
-$ npm install --global pure-prompt
+$ brew install pure
 ```
 
 Changing the pre-prompt in pure.zsh to only give the currect directory rather than the entire path:
@@ -118,18 +129,23 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 * Allow tabbing through dialogue boxes
 * Allow button press with touchpad touch rather than click
+* Minimise windows into application icon
 * Trackpad speed - 1 off the fastest
 * Hide the menu bar
 * Show battery percentage
 * Key hold allows key repeat
 * Show password immediately
 * Map the caps lock key to escape
+* Keyboard -> text - remove text replacements
+* Screen sleep time to 30min
 
 ### VSCode
 
 Install Settings sync and sync settings through the settings sync plugin
 
-### Chrome plugins
+### Chrome 
+
+#### Plugins
 
 **Regular Profile**
 * Lastpass
@@ -145,6 +161,9 @@ Install Settings sync and sync settings through the settings sync plugin
 * Wappalyzer
 * Proxy
 
+#### Settings
+
+* Downloads should go straight to desktop
 ## Linking Files (Optional)
 
 ```
