@@ -1,0 +1,307 @@
+[
+    /**
+    * Panels
+    **/
+    {
+        "key": "cmd+k cmd+e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "cmd+k cmd+g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "workbench.view.debug"
+    },
+    {
+        "key": "cmd+k cmd+x",
+        "command": "workbench.extensions.action.showInstalledExtensions"
+    },
+    {
+        "key": "cmd+k cmd+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+
+    /**
+    * Toggle Font Size
+    **/
+    {
+        "key": "cmd+k cmd+k",
+        "command": "toggle",
+        "when": "editorTextFocus",
+        "args": {
+            "id": "fontSize",
+            "value": [
+                {
+                    "editor.fontSize": 15,
+                    "editor.lineHeight": 45
+                },
+                {
+                    "editor.fontSize": 12,
+                    "editor.lineHeight": 0
+                }
+            ]
+        }
+    },
+
+
+    /**
+    * Fold/Unfold
+    **/
+    {
+        "key": "shift+cmd+[",
+        "command": "editor.fold",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "editor.unfold",
+        "when": "editorFocus"
+    }
+
+    /**
+    * Line Manipulation
+    **/
+    {
+        "key": "cmd+l",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    // Already have a vim keybinding for this
+    // {
+    //     "key": "cmd+j",
+    //     "command": "editor.action.joinLines",
+    //     "when": "editorTextFocus"
+    // },
+
+    /**
+    * File Explorer
+    **/
+    {
+        "key": "cmd+d",
+        "command": "duplicate.execute",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "cmd+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+
+    /**
+    * Multi-Cursor
+    **/
+    {
+        "key": "cmd+backspace",
+        "command": "editor.action.moveSelectionToPreviousFindMatch",
+        "when": "editorFocus && editorHasMultipleSelections"
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus && editorHasMultipleSelections"
+    },
+    {
+        "key": "cmd+right",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorFocus && editorHasSelection"
+    },
+
+    /**
+    * Split Panels
+    **/
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.joinAllGroups",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.splitEditor",
+        "when": "editorFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "workbench.action.increaseViewSize",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "editorFocus"
+    },
+
+    /**
+    * Terminal Split Panel
+    **/
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+
+    /**
+    * Emmet
+    **/
+    // These don't work with the vim plugin that I'm using
+    {
+        "key": "cmd+m cmd+i",
+        "command": "editor.emmet.action.balanceIn",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m cmd+o",
+        "command": "editor.emmet.action.balanceOut",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m cmd+w",
+        "command": "editor.emmet.action.wrapWithAbbreviation",
+        "when": "editorTextFocus"
+    },
+    // already have vim shortcut for this
+    {
+        "key": "cmd+m cmd+m",
+        "command": "editor.emmet.action.matchTag",
+        "when": "editorTextFocus"
+    },
+    //  Don't know what this does
+    // {
+        // "key": "cmd+m cmd+e",
+        // "command": "editor.action.smartSelect.expand",
+        // "when": "editorTextFocus"
+    // },
+    // Have auto rename pairs tag
+    // {
+        // "key": "cmd+m cmd+r",
+        // "command": "editor.emmet.action.updateTag",
+        // "when": "editorTextFocus"
+    // },
+    {
+        "key": "cmd+m cmd+backspace",
+        "command": "editor.emmet.action.removeTag",
+        "when": "editorTextFocus"
+    },
+
+    /**
+    * amVim Finder Fix
+    **/
+    {
+        "key": "enter",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "findWidgetVisible"
+    },
+    {
+        "key": "shift+enter",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "findWidgetVisible"
+    },
+    {
+        "key": "shift+k",
+        "command": "editor.action.showDefinitionPreviewHover",
+        "when": "editorTextFocus"
+    },
+
+    /**
+    * Project Switching
+    **/
+    {
+        "key": "cmd+;",
+        "command": "projectManager.listProjects",
+        "when": "workbenchState == 'empty'"
+    },
+    {
+        "key": "cmd+;",
+        "command": "projectManager.listProjectsNewWindow",
+        "when": "workbenchState != 'empty'"
+    },
+    // {
+    //     "key": "cmd+;",
+    //     "command": "workbench.action.switchWindow",
+    //     "when": "! config.simple-project-switcher.present"
+    // },
+    // {
+        // "key": "alt+cmd+right",
+        // "command": "workbench.action.showNextWindowTab"
+    // },
+    // {
+        // "key": "alt+cmd+left",
+        // "command": "workbench.action.showPreviousWindowTab"
+    // },
+
+    /**
+    * Open DevTools
+    **/
+    {
+        "key": "alt+cmd+i",
+        "command": "workbench.action.toggleDevTools"
+    },
+
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "workbench.action.navigateForward"
+    },
+
+    /**
+    * Disable default for cmd+k, cmd+r
+    **/
+    {
+        "key": "cmd+k cmd+r",
+        "command": "-workbench.action.keybindingsReference",
+    },
+    {
+        "key": "cmd+k cmd+r",
+        "command": "better-jest.run"
+    },
+    {
+        "key": "cmd+k cmd+f",
+        "command": "better-jest.run-file"
+    },
+    {
+        "key": "cmd+k cmd+p",
+        "command": "better-jest.run-previous"
+    }
+]

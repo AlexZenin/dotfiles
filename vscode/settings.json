@@ -1,0 +1,99 @@
+{
+  /**
+   * Silence the Noise
+   **/
+  "breadcrumbs.enabled": false,
+  "editor.matchBrackets": "never",
+  "workbench.tips.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.lightbulb.enabled": false,
+  "editor.selectionHighlight": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderLineHighlight": "none",
+  "editor.occurrencesHighlight": false,
+  "problems.decorations.enabled": false,
+  "editor.renderControlCharacters": true,
+  "editor.hideCursorInOverviewRuler": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+
+  /**
+   * Better Defaults
+   **/
+  "editor.copyWithSyntaxHighlighting": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.emptySelectionClipboard": false,
+  "workbench.editor.enablePreview": false,
+  "window.newWindowDimensions": "inherit",
+  "editor.multiCursorModifier": "ctrlCmd",
+"files.trimTrailingWhitespace": true,
+  "editor.snippetSuggestions": "bottom",
+  "editor.detectIndentation": false,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "workbench.editor.showTabs": false,
+  "editor.lineNumbers": "relative",
+
+  /**
+   * Themeing
+   **/
+  "workbench.colorTheme": "Material Theme",
+  "editor.fontSize": 12,
+  "editor.lineHeight": 0,
+  "editor.fontFamily": "Fira Code",
+  "workbench.iconTheme": "vscode-great-icons",
+
+  "editor.scrollBeyondLastLine": true,
+  "editor.wordWrap": "on",
+  "editor.formatOnPaste": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorCustomizations": {},
+  "editor.rulers": [80],
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": false
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "redhat.telemetry.enabled": false,
+  "json.schemas": [],
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+
+  /**
+   * Extensions
+   **/
+  "sync.autoUpload": true,
+  "sync.autoDownload": false,
+  "sync.gist": "737e3a37719a0db147fe1558aeb0811c",
+  // Emmet
+  "emmet.triggerExpansionOnTab": true,
+  // Eslint
+  "eslint.alwaysShowStatus": true,
+  // Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  },
+
+  /**
+   * Commonly toggled
+   **/
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.verticalScrollbarSize": 8,
+  "projectManager.git.baseFolders": ["~/repos"],
+  "projectManager.openInNewWindowWhenClickingInStatusBar": true,
+"projectManager.sortList": "Recent",
+  "workbench.activityBar.visible": false,
+"editor.suggest.snippetsPreventQuickSuggestions": false,
+"typescript.updateImportsOnFileMove.enabled": "always",
+"explorer.confirmDragAndDrop": false
+}
